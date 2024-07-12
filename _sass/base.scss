@@ -1,0 +1,165 @@
+@import './theme.scss';
+@import './typography.scss';
+
+html,
+body {
+  min-height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-content: center;
+}
+
+body {
+  background: var(--background-primary);
+  color: var(--foreground-primary);
+
+  p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+  }
+
+  max-width: 100%;
+}
+
+::-moz-selection {
+  background: var(--foreground-tertiary);
+  color: var(--foreground-primary);
+}
+
+::selection {
+  background: var(--foreground-tertiary);
+  color: var(--foreground-primary);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background: var(--background-secondary);
+  color: var(--background-primary);
+  align-items: center;
+  padding: 3rem 0 0 0;
+
+  .text-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  div.titleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    -webkit-filter: var(--header-dropshadow);
+    filter: var(--header-dropshadow);
+
+    h1 {
+      background: var(--header-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: var(--font-weight-bold);
+    }
+  }
+
+  img {
+    display: flex;
+    flex: 2;
+    max-width: 285.5px;
+    max-height: 239.5px;
+    margin: auto;
+    width: auto;
+  }
+}
+
+footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  background: var(--background-secondary);
+  color: var(--background-primary);
+  font-weight: 700;
+  padding: 2rem;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    li {
+      margin: 0 0.5rem;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  max-width: 720px;
+  height: fit-content;
+  margin: auto;
+
+  .title {
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .hero {
+    margin: 0 auto;
+    display: block;
+    width: 190px;
+  }
+}
+
+hr {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--background-secondary);
+}
+
+// above 720px wide we want to display desktop styles
+
+@media (min-width: 720px) {
+  .contentWrap {
+    width: 720px;
+    margin: auto;
+  }
+
+  // header {
+  //   flex-direction: row;
+  //   padding: unset;
+  //   img {
+  //     max-width: 285.5px;
+  //     max-height: 239.5px;
+  //     margin: 0;
+  //     width: auto;
+  //   }
+  //   div.titleContainer {
+  //     justify-content: flex-start;
+  //     align-items: flex-start;
+  //     h1 {
+  //       font-size: 2.42rem;
+  //     }
+  //   }
+  // }
+  .main {
+    padding: 2rem;
+    width: 720px;
+    margin: auto;
+  }
+}

@@ -1,0 +1,26 @@
+body {
+  font-size: var(--font-size-base);
+  font-family: -apple-system, BlinkMacSystemFont, "Lato", "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2 {
+  font-size: 4.42rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 4.2rem;
+  font-weight: 500;
+  margin: 0 0 0.621rem 0;
+}
+
+h3 {
+  margin: 0.5rem 0;
+}
+
+h4 {
+  color: var(--foreground-tertiary);
+  margin: 0.25rem 0;
+}

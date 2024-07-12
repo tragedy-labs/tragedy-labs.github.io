@@ -1,0 +1,26 @@
+:root {
+  --background-primary: #212121;
+  --background-secondary: #e4e8eb;
+  --foreground-primary: #fff;
+  --foreground-secondary: #efefef;
+  --foreground-tertiary: #93bcf9;
+
+  --form-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+
+  --button-background: linear-gradient(45deg, #7198d3, #93bcf9);
+  --button-text-shadow: -1px 1px 0 rgba(255, 255, 255, 0.25);
+  --button-border: 1px solid #6284b7;
+  --button-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16),
+    0 1px 2px rgba(0, 0, 0, 0.23), inset -1px 1px 0 rgba(255, 255, 255, 0.15),
+    inset 1px -1px 0 rgba(0, 0, 0, 0.025);
+
+  --header-gradient: linear-gradient(#52606c, #121517);
+  --header-dropshadow: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+
+  --outline: var(--foreground-tertiary) solid 2px;
+  --outline-offset: 2px;
+
+  --font-size-base: 16px;
+  --font-weight-bold: 900;
+}
